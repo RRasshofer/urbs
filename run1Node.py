@@ -98,7 +98,7 @@ def run_scenario(input_file, timesteps, scenario, result_dir,
     return prob
 
 if __name__ == '__main__':
-    input_file = '1Node_test.xlsx'
+    input_file = '1Node.xlsx'
     result_name = os.path.splitext(input_file)[0]  # cut away file extension
     result_dir = prepare_result_directory(result_name)  # name + time stamp
 
@@ -107,6 +107,7 @@ if __name__ == '__main__':
     timesteps = range(offset, offset+length+1)
 
     # plotting commodities/sites
+    
     plot_tuples = [
         ('Campus', 'Elec'),
         ('Campus', 'Heat'),
