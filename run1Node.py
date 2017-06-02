@@ -103,7 +103,7 @@ if __name__ == '__main__':
     result_dir = prepare_result_directory(result_name)  # name + time stamp
 
     # simulation timesteps
-    (offset, length) = (1000, 1024)  # time step selection
+    (offset, length) = (1000, 1167)  # time step selection
     timesteps = range(offset, offset+length+1)
 
     # plotting commodities/sites
