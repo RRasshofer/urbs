@@ -103,7 +103,7 @@ if __name__ == '__main__':
     result_dir = prepare_result_directory(result_name)  # name + time stamp
 
     # simulation timesteps
-    (offset, length) = (1008, 1032)  # time step selection
+    (offset, length) = (1008, 1031)  # time step selection ,one day in spring
     timesteps = range(offset, offset+length+1)
 
     # plotting commodities/sites
