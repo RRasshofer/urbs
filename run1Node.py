@@ -98,24 +98,25 @@ def run_scenario(input_file, timesteps, scenario, result_dir,
     return prob
 
 if __name__ == '__main__':
-    input_file = '1Node.xlsx'
+    input_file = '1Node_now.xlsx'
     result_name = os.path.splitext(input_file)[0]  # cut away file extension
     result_dir = prepare_result_directory(result_name)  # name + time stamp
 
     # simulation timesteps
-    (offset, length) = (1, 8759)  # time step selection
+    (offset, length) = (1008, 1031)  # time step selection ,one day in spring
     timesteps = range(offset, offset+length+1)
 
     # plotting commodities/sites
+    
     plot_tuples = [
         ('Campus', 'Elec'),
-        ('Campus', 'Heat'),
+        ('Campus', 'Heat(100C)'),
         ('Campus', 'Cold')
     ]
 
     # detailed reporting commodity/sites
     report_tuples = [
-        ('Campus', 'Elec'), ('Campus', 'Heat'), ('Campus', 'Cold')]
+        ('Campus', 'Elec'), ('Campus', 'Heat(100C)'), ('Campus', 'Cold')]
 
     # plotting timesteps
     plot_periods = {
